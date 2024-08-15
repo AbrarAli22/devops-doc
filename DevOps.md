@@ -75,3 +75,259 @@ is used to creat directory
 it is used to compress and decompress the data or files
 gzip file name or directory.
 gzip -d file name or directory
+gzip -r directory_name use to compress directory or folder
+gzip -dr directory_name use to decompress directory or folder
+
+16) What is
+this is used to see what a unknown command can do eg whatis ls
+17) who
+who command is used to display loggedin users and current run level of system and the last system boot
+1. Print out all details of currently logged-in users
+who -a
+2. Print out the list of all dead processes
+who -d -H
+
+who [options] [filename]
+Additional Flags and their Functionalities
+Short Flag
+Description
+-rprints all the current runlevel
+-dprint all the dead processes
+-qprint all the login names and total number of logged on
+users
+-hprint the heading of the columns displayed
+-b print the time of last system boot
+
+18) Free
+this is used to show or see memory information
+19) top/htop command
+it is pre build command It is used for displaying information about the system and its top CPU-consuming processes as well as RAM usage. it is like as ps command
+htop is a tool to monitor the process and manage with more attractive colors and functionality
+Comparison between top and htop:
+20) echo
+echo used to print the line and save the test in a file or append lines in files
+
+21) finger
+it is external program used to see user info or a particular user
+22)groups
+ it shows the or manage the user with the same prevlage 
+ 23) cp
+ cp means copy command it used to copy a file or multiple files or folder/directory 
+ 1. To copy the contents of the source ﬁle to the destination ﬁle.
+cp sourceFile destFile
+If the destination ﬁle doesn't exist then the ﬁle is created and the
+content is copied to it. If it exists then the ﬁle is overwritten.
+2. To copy a ﬁle to another directory specify the absolute or the
+relative path to the destination directory.
+cp sourceFile /folderName/destFile
+3. To copy a directory, including all its ﬁles and subdirectories
+cp -R folderName1 folderName2
+If the destination directory already exists, the source directory itself and
+its content are copied inside the destination directory.
+4. To copy only the ﬁles and subdirectories but not the source
+directory
+cp -RT folderName1 folderName2
+24) mv command
+used to move files or directory frome one to another it is also used to rename a file or folder
+1. To rename a ﬁle called old_name.txt:
+mv old_name.txt new_name.txt
+2. To move a ﬁle called essay.txt from the current directory to a
+directory called assignments and rename it essay1.txt:
+mv essay.txt assignments/essay1.txt
+3. To move a ﬁle called essay.txt from the current directory to a
+4. directory called assignments without renaming it
+mv essay.txt assignments
+
+25) ps command
+The ps command is used to identify programs and processes that are
+running on the system and the resources they are using. Its frequently
+pipelined with other commands like grep to search for a
+program/process or less so that the user can analyze the output one
+page at a time.
+26) kill command
+ kill command in Linux (located in /bin/kill), is a built-in command
+which is used to terminate processes manually. The kill command
+sends a signal to a process which terminates the process. If the user
+doesn’t specify any signal which is to be sent along with kill command
+then default TERM signal is sent that terminates the process.
+
+27) killall command
+killall sends a signal to all processes running any of the speciﬁed
+commands. If no signal name is speciﬁed, SIGTERM is sent. In general,
+killall command kills all processes by knowing the name of the
+process.
+Signals can be speciﬁed either by name (e.g. -HUP or -SIGHUP) or by
+number (e.g. -1) or by option -s.
+If the command name is not a regular expression (option -r) and
+contains a slash (/), processes executing that particular ﬁle will be
+selected for killing, independent of their name.
+killall returns a zero return code if at least one process has been
+killed for each listed command, or no commands were listed and at
+least one process matched the -u and -Z search criteria. killall
+returns non-zero otherwise.
+A killall process never kills itself (but may kill other killall
+processes).
+Examples:
+1. Kill all processes matching the name conky with SIGTERM:
+killall conky
+# OR
+killall -SIGTERM conky
+# OR
+kilall -15 conky
+I was able to kill Wine ( which are Windows exe ﬁles running on Linux )
+28) env command
+The env command in Linux/Unix is used to either print a list of the
+current environment variables or to run a program in a custom
+environment without changing the current one.
+1. Print out the set of current environment variables
+env
+2. Run a command with an empty environment
+env -i command_name
+3. Remove variable from the environment
+env -u variable_name
+4. End each output with NULL
+env -0
+29) printenv
+The printenv prints the values of the speciﬁed environment
+VARIABLE(s). If no VARIABLE is speciﬁed, print name and value pairs for
+them all.
+Examples:
+1. Display the values of all environment variables.
+printenv
+2. Display the location of the current user's home directory.
+printenv HOME
+3. To use the --null command line option as the terminating
+character between output entries.
+printenv --null SHELL HOME
+NOTE: By default, the printenv command uses newline as the
+terminating character between output entries.
+30) nano command
+it is an editor like vi and vim it also creat file if the file not exist
+its a pre-build editor
+31) rm command
+rm which stands for "remove" is a command used to remove (delete)
+speciﬁc ﬁles. It can also be used to remove directories by using the
+appropriate ﬂag.
+32) ifconfig command
+ifconfig is used to conﬁgure the kernel-resident network interfaces. It
+is used at boot time to set up interfaces as necessary. After that, it is
+usually only needed when debugging or when system tuning is needed.
+If no arguments are given, ifconfig displays the status of the currently
+active interfaces. If a single interface argument is given, it displays the
+status of the given interface only; if a single -a argument is given, it
+displays the status of all interfaces, even those that are down.
+Otherwise, it conﬁgures an interface.
+33) ip command
+The ip command is present in the net-tools which is used for
+performing several network administration tasks. IP stands for Internet
+Protocol. This command is used to show or manipulate routing, devices,
+and tunnels. It can perform tasks like conﬁguring and modifying the
+default and static routing, setting up tunnel over IP, listing IP addresses
+and property information, modifying the status of the interface,
+assigning, deleting and setting up IP addresses and routes.
+34) clear command
+it is used to clear the terminal screen
+35) su command
+it is used to switch the user eg su then the user name if no name is given is proceed to root user
+36) wget command
+The wget command is used for downloading ﬁles from the Internet. It
+supports downloading ﬁles using HTTP, HTTPS and FTP protocols. It
+allows you to download several ﬁles at once, download in the
+background, resume downloads, limit the bandwidth, mirror a website,
+	and much more.
+	
+37) curl command
+In linux, curl is a tool to transfer data from or to a server, using one of
+the supported protocols(DICT, FILE ,FTP, FTPS, GOPHER, HTTP, HTTPS,
+IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB,
+SMBS, SMTP, SMTPS, TELNET and TFTP).
+38) yes command
+it is used to print endless string in terminal
+39) last command
+This command shows you a list of all the users that have logged in and
+out since the creation of the var/log/wtmp ﬁle. There are also some
+parameters you can add which will show you for example when a
+certain user has logged in and how long he was logged in for.
+40)locate command
+it is used to search specific file or folder location which matches
+41)sudo command
+is used to intract with root user 
+The sudo ("substitute user do" or "super user do") command allows a
+user with proper permissions to execute a command as another user,
+such as the superuser.
+This is the equivalent of "run as administrator" option in Windows. The
+sudo command allows you to elevate your current user account to have
+root privileges. Also, the root privilege in sudo is only valid for a
+temporary amount of time. Once that time expires, you have to enter
+your password again to regain root privilege.
+
+42)apt command
+it is used to install applications in os/and remove that pakage/upgrade
+apt (Advantage package system) command is used for interacting with
+dpkg (packaging system used by debian). There is already the dpkg
+command to manage .deb packages. But apt is a more user-friendly
+and eﬃcient way.
+In simple terms apt is a command used for installing, deleting and
+performing other operations on debian based Linux.
+You will be using the apt command mostly with sudo privileges.
+Installing packages:
+install followed by package_name is used with apt to install a new
+package.
+Syntax:
+sudo apt install package_name
+43) zip command
+The zip command is used to compress ﬁles and reduce their size. It
+outputs an archive containing one or more compressed ﬁles or
+directories.
+44) shutdown command
+The shutdown command lets you bring your system down in a secure
+way. When shutdown is executed the system will notify all logged-in
+users and disallow further logins. You have the option to shut down your
+system immediately or after a speciﬁc time.
+Only users with root (or sudo) privileges can use the shutdown
+command.
+45) dir command
+The dir command lists the contents of a directory(the current directory
+by default). It diﬀers from ls command in the format of listing the
+content. By default, the dir command lists the ﬁles and folders in
+columns, sorted vertically and special characters are represented by
+backslash escape sequences.
+46)reboot command
+The reboot command is used to restart a linux system. However, it
+requires elevated permission using the sudo command. Necessity to
+use this command usually arises after signiﬁcant system or network
+updates have been made to the system.
+47)sort command
+the sort command is used to sort a ﬁle, arranging the records in a
+particular order. By default, the sort command sorts a ﬁle assuming the
+contents are ASCII. Using options in the sort command can also be used
+to sort numerically.
+48) paste comand
+The paste command writes lines of two or more ﬁles, sequentially and
+separated by TABs, to the standard output
+49)exit command
+it is used to close or terminate the active shell session 
+ctrl + D is also a shortcut to exit the process and terminal.
+50) diff/sdiff command
+This command is used to display the diﬀerences in the ﬁles by
+comparing the ﬁles line by line.
+51) tar command
+it is used to compress and un-compres the files and folders
+The tar command stands for tape archive, is used to create Archive
+and extract the Archive ﬁles. This command provides archiving
+functionality in Linux. We can use tar command to create compressed
+or uncompressed Archive ﬁles and also maintain and modify them.
+52) gunzip command
+The gunzip command is an antonym command of gzip command. In
+other words, it decompresses ﬁles deﬂated by the gzip command.
+gunzip takes a list of ﬁles on its command line and replaces each ﬁle
+whose name ends with .gz, -gz, .z, -z, or _z (ignoring case) and which
+begins with the correct magic number with an uncompressed ﬁle
+without the original extension. gunzip also recognizes the special
+extensions .tgz and .taz as shorthands for .tar.gz and .tar.Z
+respectively.
+53) hostnamectl
+The hostnamectl command provides a proper API used to control Linux
+system hostname and change its related settings. The command also
+helps to change the hostname without actually locating and editing the
+/etc/hostname ﬁle on a given system.
