@@ -331,3 +331,128 @@ The hostnamectl command provides a proper API used to control Linux
 system hostname and change its related settings. The command also
 helps to change the hostname without actually locating and editing the
 /etc/hostname ﬁle on a given system.
+
+54) scp command
+secure copy command it allows to copy file from different location in encrypted format so at trafic no one can see the sensitve data
+55)sleep command
+The sleep command is used to create a dummy job. A dummy job helps
+in delaying the execution. It takes time in seconds by default but a
+small suﬃx(s, m, h, d) can be added at the end to convert it into any
+other format. This command pauses the execution for an amount of
+time which is deﬁned by NUMBER.
+Note: If you will deﬁne more than one NUMBER with sleep command
+then this command will delay for the sum of the values.
+56)split command
+The split command in Linux is used to split a ﬁle into smaller ﬁles.
+57)useradd command
+The useradd command is used to add or update user accounts to the
+system.
+To add a new user with the useradd command the syntax would be the
+following:
+useradd NewUser
+To add a new user with the useradd command and give a home
+directory path for this new user the syntax would be the following:
+useradd -d /home/NewUser NewUser
+To add a new user with the useradd command and give it a speciﬁc id
+the syntax would be the following:
+useradd -u 1234 NewUser
+
+58)userdel command 
+The userdel command is used to delete a user account and related
+ﬁles
+Examples:
+To delete a user with the userdel command the syntax would be the
+following:
+userdel userName
+To force the removal of a user account even if the user is still logged in,
+using the userdel command the syntax would be the following:
+userdel -f userName
+To delete a user along with the ﬁles in the user’s home directory using
+the userdel command.
+
+59)usermod command
+The usermod command lets you change the properties of a user in Linux
+through the command line. After creating a user we sometimes have to
+change their attributes, like their password or login directory etc. So in
+order to do that we use the usermod command.
+
+60)ionice command
+The ionice command is used to set or get process I/O scheduling class
+and priority.
+If no arguments are given , ionice will query the current I/O scheduling
+class and priority for that process.
+61)ping command
+The ping (Packet Internet Groper) command is a network utility used to
+check network connectivity between a host and a server or another
+host. It sends ICMP (Internet Control Message Protocol) echo requests to
+a speciﬁed IP address or URL and measures the time it takes to receive
+a response. This time delay is referred to as "latency." Ping is a
+fundamental tool for network troubleshooting and monitoring.
+62)rsync command
+The rsync command is probably one of the most used commands out
+there. It is used to securely copy ﬁles from one server to another over
+SSH.
+Compared to the scp command, which does a similar thing, rsync
+makes the transfer a lot faster, and in case of an interruption, you could
+restore/resume the transfer process.
+In this tutorial, I will show you how to use the rsync command and copy
+ﬁles from one server to another and also share a few useful tips!
+Before you get started, you would need to have 2 Linux servers. I will
+be using DigitalOcean for the demo and deploy 2 Ubuntu servers.
+You can use my referral link to get a free $100 credit that you could use
+to deploy your virtual machines and test the guide yourself on a few
+DigitalOcean servers:
+**Transfer Files from local server to remote**
+This is one of the most common causes. Essentially this is how you
+would copy the ﬁles from the server that you are currently on (the
+source server) to remote/destination server.
+What you need to do is SSH to the server that is holding your ﬁles, cd to
+the directory that you would like to transfer over:
+cd /var/www/html
+And then run:
+rsync -avz user@your-remote-server.com:/home/user/dir/
+The above command would copy all the ﬁles and directories from the
+current folder on your server to your remote server.
+Rundown of the command:
+-a: is used to specify that you want recursion and want to preserve
+the ﬁle permissions and etc.
+-v: is verbose mode, it increases the amount of information you
+are given during the transfer.
+-z: this option, rsync compresses the ﬁle data as it is sent to the
+destination machine, which reduces the amount of data being
+transmitted -- something that is useful over a slow connection.
+I recommend having a look at the following website which explains the
+commands and the arguments very nicely:
+**Transfer Files remote server to local**
+In some cases you might want to transfer ﬁles from your remote server
+to your local server, in this case, you would need to use the following
+syntax:
+rsync -avz your-user@your-remote-server.com:/home/user/dir/
+/home/user/local-dir/
+Again, in case that you have a non-standard SSH port, you can use the
+following command:
+rsync -avz -e 'ssh -p 2510' your-user@your-remote-
+server.com:/home/user/dir/ /home/user/local-dir/
+
+Transfer only missing files
+If you would like to transfer only the missing ﬁles you could use the --
+ignore-existing ﬂag.
+This is very useful for ﬁnal sync in order to ensure that there are no
+missing ﬁles after a website or a server migration.
+Basically the commands would be the same apart from the appended --
+ignore-existing ﬂag:
+rsync -avz --ignore-existing   user@your-remote-
+server.com:/home/user/dir/
+
+63)ssh command
+The ssh command in Linux stands for "Secure Shell". It is a protocol
+used to securely connect to a remote server/system. ssh is more secure
+in the sense that it transfers the data in encrypted form between the
+host and the client. ssh runs at TCP/IP port 22.
+
+
+
+**Bash scripting**
+we can creat a bach file using multiple command like using cat ,nano,vim,touch but at the end of file is saved with the extention of .sh this means a bash file
+and we can make it executable file using +x chmod we can also give or set the preority using chmod of the file
+
