@@ -93,7 +93,7 @@ Short Flag
 Description
 -rprints all the current runlevel
 -dprint all the dead processes
--qprint all the login names and total number of logged on
+-q print all the login names and total number of logged on
 users
 -hprint the heading of the columns displayed
 -b print the time of last system boot
@@ -449,6 +449,9 @@ The ssh command in Linux stands for "Secure Shell". It is a protocol
 used to securely connect to a remote server/system. ssh is more secure
 in the sense that it transfers the data in encrypted form between the
 host and the client. ssh runs at TCP/IP port 22.
+
+64)chmod command
+it is used to change the add and remove the  
 
 
 
