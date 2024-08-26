@@ -17,6 +17,9 @@ ubuntu commands
   4. sudo usermod options username
   5. sudo passwd username to change userpassword
   6. unlock useraccount sudo usermod -U username
+  
+  
+  testing script
 
 
 1) Ls command
