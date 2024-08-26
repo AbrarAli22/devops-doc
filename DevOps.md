@@ -1,4 +1,23 @@
 ubuntu commands
+  
+  system users commands
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  commands that use admin prevliage
+  1. Add a new user  sudo adduser username
+  2. add a new user sudo useradd username
+  3. delete or modified user sudo deluser username 
+  4. sudo usermod options username
+  5. sudo passwd username to change userpassword
+  6. unlock useraccount sudo usermod -U username
+
 
 1) Ls command
 ls command is used for list the data inside the directory ls is also used with some flags to inhanse the functionality here are some of them
