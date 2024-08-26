@@ -20,6 +20,8 @@ ubuntu commands
   
   
   testing script
+  
+  how script works
 
 
 1) Ls command
