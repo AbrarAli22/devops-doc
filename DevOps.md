@@ -21,7 +21,7 @@ ubuntu commands
   
   testing script
   
-  how script works
+  how script worksh
 
 
 1) Ls command
@@ -126,6 +126,7 @@ users
 this is used to show or see memory information
 19) top/htop command
 it is pre build command It is used for displaying information about the system and its top CPU-consuming processes as well as RAM usage. it is like as ps command
+from top get back command is press q for exit;
 htop is a tool to monitor the process and manage with more attractive colors and functionality
 Comparison between top and htop:
 20) echo
