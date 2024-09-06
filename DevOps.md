@@ -127,6 +127,7 @@ this is used to show or see memory information
 19) top/htop command
 it is pre build command It is used for displaying information about the system and its top CPU-consuming processes as well as RAM usage. it is like as ps command
 from top get back command is press q for exit;
+we can filer process using awk command with specific filters to get specific processes
 htop is a tool to monitor the process and manage with more attractive colors and functionality
 Comparison between top and htop:
 20) echo
