@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7697535666647d5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aws/Sync Aws Secret manager  manager with gitlab in local machine.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "aws/AWS  adding image to Ecr from local and from pipeline.md",
+                "file": "aws/Sync Aws Secret manager  manager with gitlab in local machine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "aws/AWS  adding image to Ecr from local and from pipeline.md",
+                "file": "aws/Sync Aws Secret manager  manager with gitlab in local machine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "aws/AWS  adding image to Ecr from local and from pipeline.md"
+                "file": "aws/Sync Aws Secret manager  manager with gitlab in local machine.md"
               }
             }
           }
@@ -146,8 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "00a24c7bf067455c",
+  "active": "7697535666647d5a",
   "lastOpenFiles": [
+    "Screenshot from 2024-10-07 15-17-09.png",
+    "Sync Aws Secret manager  manager with gitlab in local machine.md",
+    "aws/Sync Aws Secret manager  manager with gitlab in local machine.md",
+    "aws/AWS  adding image to Ecr from local and from pipeline.md",
+    "Tasks/Todays Task 4-10-2024.md",
+    "Screenshot from 2024-10-04 15-16-05.png",
+    "Screenshot from 2024-10-04 15-13-37.png",
+    "Loadbalancer/Application load Balancer.md",
+    "Tasks",
+    "Loadbalancer",
     "file.md",
     "exapmle.txt",
     "deploying website from local to ec2/Connecting TO Ec2 instance.md",
@@ -155,7 +178,6 @@
     "Docker compose file.md",
     "DevOps.md",
     "Scalability/How to improve application scalability in aws.md",
-    "aws/AWS  adding image to Ecr from local and from pipeline.md",
     "aws",
     "Untitled.md",
     "Scalability/aws/AWS  adding image to Ecr from local and from pipeline.md",
